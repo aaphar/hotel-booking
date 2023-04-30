@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hotel Booking Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="./modal.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">Bookings</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Book a room today and enjoy your stay</h1>
+
+    <form id="search-form">
+      <div>
+        <label for="location-input">Location:</label>
+        <input type="text" id="location-input" name="location" required />
+      </div>
+      <div>
+        <label for="checkin-input">Check-in Date:</label>
+        <input type="date" id="checkin-input" name="checkin" required />
+      </div>
+      <div>
+        <label for="checkout-input">Checkout Date:</label>
+        <input type="date" id="checkout-input" name="checkout" required />
+      </div>
+      <div>
+        <label for="adults-input">Number of Adults:</label>
+        <input
+          type="number"
+          id="adults-input"
+          name="adults"
+          min="1"
+          max="4"
+          value="1"
+          required
+        />
+      </div>
+      <div>
+        <label for="rooms-input">Number of Rooms:</label>
+        <input
+          type="number"
+          id="rooms-input"
+          name="rooms"
+          min="1"
+          max="4"
+          value="1"
+          required
+        />
+      </div>
+      <button type="submit" id="search-btn" class="btn">Search</button>
+    </form>
+    <div id="results-container"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

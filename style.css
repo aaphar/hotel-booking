@@ -1,0 +1,171 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+form {
+    margin: 40px auto;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#results-container {
+    margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.result__img {
+    flex: 1;
+}
+
+.result__img img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.result__details {
+    flex: 2;
+    padding: 0 20px;
+}
+
+.result__name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.result__address {
+    margin-bottom: 10px;
+}
+
+.result__rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.result__rating svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.result__rating span {
+    font-weight: bold;
+}
+
+.result__price {
+    font-weight: bold;
+}
+
+#results-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#results-container li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+#results-container li h2 {
+    margin-top: 0;
+}
+
+#results-container li p {
+    margin-bottom: 10px;
+}
+
+.hotel-img {
+    display: flex;
+    width: 200px;
+    margin-left: 70%;
+}
