@@ -42,6 +42,8 @@ searchBtn.addEventListener("click", async (event) => {
 
         const hotelCaption = document.createElement("p");
         hotelCaption.textContent = element.caption.replace(/<[^>]+>/g, "");
+        const cost = hotelData.geoId;
+        hotelCaption.textContent += cost + " $";
         hotelItem.appendChild(hotelCaption);
 
         const image = document.createElement("img");
