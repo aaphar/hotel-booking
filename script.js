@@ -51,7 +51,7 @@ searchBtn.addEventListener("click", async (event) => {
 
         const hotelRating = document.createElement("h3");
         const rating = Math.floor(Math.random() * 10);
-        hotelRating.textContent = `${rating} over 10`;
+        hotelRating.textContent = `RATING: ${rating} over 10`;
         hotelItem.appendChild(hotelRating);
 
         const image = document.createElement("img");
