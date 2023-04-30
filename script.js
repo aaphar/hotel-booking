@@ -42,9 +42,17 @@ searchBtn.addEventListener("click", async (event) => {
 
         const hotelCaption = document.createElement("p");
         hotelCaption.textContent = element.caption.replace(/<[^>]+>/g, "");
-        const cost = hotelData.geoId;
-        hotelCaption.textContent += cost + " $";
         hotelItem.appendChild(hotelCaption);
+
+        const hotelPrice = document.createElement("h3");
+        const cost = element.geoId.slice(0, 3);
+        hotelPrice.textContent = `${cost} $`;
+        hotelItem.appendChild(hotelPrice);
+
+        const hotelRating = document.createElement("h3");
+        const rating = Math.floor(Math.random() * 10);
+        hotelRating.textContent = `${rating} over 10`;
+        hotelItem.appendChild(hotelRating);
 
         const image = document.createElement("img");
         image.src = "./hotel.jpg";
